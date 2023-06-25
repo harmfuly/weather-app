@@ -1,0 +1,10 @@
+<div *ngIf="weatherData" class="container">
+  <div class="all-content">
+    <h2>{{ weatherData.name }}</h2>
+    <div class="content">
+      <p class="temperature">{{ temperatureInCelsius }}°C</p>
+      <img [src]="getWeatherIcon(weatherData.weather[0].icon)" alt="Weather Icon">
+    </div>
+  </div>
+  </div>
+  
